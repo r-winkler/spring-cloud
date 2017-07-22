@@ -1,11 +1,17 @@
 server:
   port: 8888
 
+logging:
+      level:
+          org.springframework: 'DEBUG'
+
 spring:
   profiles:
-    active: native
+    active: default
   cloud:
     config:
       server:
-        native:
-          search-locations: searchLocations: file:C:\dev\repos\spring-cloud\config-server
+        git:
+          uri: https://github.com/r-winkler/spring-cloud/
+          search-paths: config-repo/ping-service
+
