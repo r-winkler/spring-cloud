@@ -13,5 +13,5 @@ spring:
       server:
         git:
           uri: https://github.com/r-winkler/spring-cloud/
-          search-paths: config-repo/ping-service
+          search-paths: config-repo/ping-service config-repo/pong-service
 
