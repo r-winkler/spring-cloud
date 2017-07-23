@@ -8,4 +8,5 @@ public interface PongFeignClient {
 
     @GetMapping("/pong")
     String getPong();
+
 }
