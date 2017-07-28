@@ -7,8 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import static ch.renewinkler.util.RandomSleep.randomSleep;
-
 @Component
 public class PongRestTemplateClient {
 
@@ -17,7 +15,7 @@ public class PongRestTemplateClient {
 
     @HystrixCommand(fallbackMethod = "getPongFallback")
     public String getPong() {
-        randomSleep();
+        //randomSleep();
         ResponseEntity<String> restExchange =
                 restTemplate.exchange(
                         "http://pong-service/pong",

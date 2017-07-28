@@ -11,8 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-import static ch.renewinkler.util.RandomSleep.randomSleep;
-
 @Component
 public class PongDiscoveryClient {
 
@@ -21,7 +19,7 @@ public class PongDiscoveryClient {
 
     @HystrixCommand(fallbackMethod = "getPongFallback")
     public String getPong() {
-        randomSleep();
+        //randomSleep();
         RestTemplate restTemplate = new RestTemplate();
         List<ServiceInstance> instances = discoveryClient.getInstances("pong-service");
         if (instances.size() == 0) return null;

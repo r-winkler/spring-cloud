@@ -25,3 +25,9 @@ http://localhost:8081/pong
 == Service Gateway (Zuul)
 
 => is basically a reverse proxy
+
+http://localhost:5555/routes
+
+http://localhost:5555/api/ping-service/ping
+
+http://localhost:5555/api/pong-service/pong
