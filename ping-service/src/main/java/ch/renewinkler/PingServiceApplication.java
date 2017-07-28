@@ -37,7 +37,7 @@ public class PingServiceApplication {
         RestTemplate template = new RestTemplate();
         // interceptor for delivering the correlation id to pong-service
         // only this client is configured with this interceptor, the discovery and feign client do not
-        // deliver the corrlation-id
+        // deliver the correlation-id
         List interceptors = template.getInterceptors();
         if (interceptors == null) {
             template.setInterceptors(Collections.singletonList(new UserContextInterceptor()));
