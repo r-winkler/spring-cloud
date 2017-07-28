@@ -17,4 +17,5 @@ public class UserContext {
     private String authToken = new String();
     private String userId = new String();
 
+
 }
