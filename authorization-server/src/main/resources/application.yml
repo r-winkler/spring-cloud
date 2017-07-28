@@ -1,0 +1,6 @@
+server:
+  port: 8901
+
+logging:
+    level:
+        org.springframework: 'DEBUG'
