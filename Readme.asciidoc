@@ -3,12 +3,15 @@
 == Config Server
 
 http://localhost:8888/ping-service.yml or http://localhost:8888/ping-service/default
+
 http://localhost:8888/pong-service.yml or http://localhost:8888/pong-service/default
 
 == Service Discovery
 
 http://localhost:8761/eureka/apps
+
 http://localhost:8761/eureka/apps/ping-service
+
 http://localhost:8761/eureka/apps/pong-service
 
 == Services
@@ -16,4 +19,5 @@ http://localhost:8761/eureka/apps/pong-service
 => Config Server and Service Discovery need to be running.
 
 http://localhost:8080/ping
+
 http://localhost:8081/pong
