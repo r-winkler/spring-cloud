@@ -6,7 +6,7 @@ http://localhost:8888/ping-service.yml or http://localhost:8888/ping-service/def
 
 http://localhost:8888/pong-service.yml or http://localhost:8888/pong-service/default
 
-== Service Discovery
+== Service Discovery (Eureka)
 
 http://localhost:8761/eureka/apps
 
@@ -21,3 +21,7 @@ http://localhost:8761/eureka/apps/pong-service
 http://localhost:8080/ping
 
 http://localhost:8081/pong
+
+== Service Gateway (Zuul)
+
+=> is basically a reverse proxy

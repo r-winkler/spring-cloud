@@ -21,6 +21,7 @@
         <module>ping-service</module>
         <module>pong-service</module>
         <module>service-discovery</module>
+        <module>service-gateway</module>
     </modules>
 
     <properties>
